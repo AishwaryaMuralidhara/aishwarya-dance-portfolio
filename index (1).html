@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aishwarya Muralidhara — Bharatanatyam Artist</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=uD6-yRBMPAQc3J0zvTcKEbpPcBKKM_dL4V6KDd0bhiu8_lSyIxyuJzthqSMaLq1EfzPYNMZjuD2dp9PCbDTCptB6KUv4lVRrK7RcmrtbU5U6TdUQUznMFkzLrWV8c2vE" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly82OWQzYWQwZmU2ZGRjZDc0YzI3NDE4NTMtLXNwbGVuZGlkLXN3YW4tM2Q3ODFhLm5ldGxpZnkuYXBwLw"/><style>
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8CC80;
+    --gold-dark: #8B6914;
+    --deep: #1C0E05;
+    --bg-mid: #2E1408;
+    --maroon: #6B1020;
+    --cream: #FDF6E3;
+    --warm: #F5E6C8;
+    --text: #2C1810;
+    --muted: #9A7050;
+    --about-bg: #F7EDD8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--deep); color: var(--cream); font-family: 'Raleway', sans-serif; font-weight: 300; overflow-x: hidden; }
+
+  /* ===== SKIP LINK ===== */
+  .skip-link { position: absolute; top: -100px; left: 16px; background: var(--gold); color: var(--deep); font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px; padding: 10px 20px; border-radius: 2px; z-index: 9999; transition: top 0.2s; text-decoration: none; }
+  .skip-link:focus { top: 8px; }
+
+  /* ===== TOP NAV BAR ===== */
+  .top-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(15,5,0,0.93); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(201,168,76,0.18); }
+  .top-nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 60px; }
+  .top-nav-logo { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 3px; color: var(--gold); text-decoration: none; white-space: nowrap; }
+  .top-nav-logo:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+  .top-nav-links { display: flex; list-style: none; gap: 2px; align-items: center; }
+  .top-nav-links a { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: rgba(253,246,227,0.6); text-decoration: none; padding: 6px 9px; border-radius: 2px; transition: color 0.2s, background 0.2s; }
+  .top-nav-links a:hover, .top-nav-links a:focus-visible { color: var(--gold-light); background: rgba(201,168,76,0.08); }
+  .top-nav-links a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .top-nav-links a.nav-contact { color: var(--gold); border: 1px solid rgba(201,168,76,0.4); padding: 5px 13px; margin-left: 4px; }
+  .top-nav-links a.nav-contact:hover { background: rgba(201,168,76,0.15); color: var(--gold-light); }
+  .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; border-radius: 3px; }
+  .nav-toggle:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--gold); border-radius: 2px; transition: all 0.3s; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* NAV DOTS */
+  .nav-dots { position: fixed; right: 18px; top: 50%; transform: translateY(-50%); z-index: 100; display: flex; flex-direction: column; gap: 10px; }
+  .nav-dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(201,168,76,0.3); cursor: pointer; transition: all 0.3s; border: none; padding: 0; }
+  .nav-dot.active { background: var(--gold); transform: scale(1.5); }
+  .nav-dot:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+  /* HERO */
+  .hero { position: relative; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(ellipse at 60% 40%, #3D1A00 0%, #1A0A00 60%); overflow: hidden; padding: 100px 40px 60px; }
+  .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A84C' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.6; }
+  .border-frame { position: absolute; inset: 20px; border: 1px solid rgba(201,168,76,0.2); pointer-events: none; }
+  .border-frame::before { content: ''; position: absolute; inset: 6px; border: 1px solid rgba(201,168,76,0.1); }
+  .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: 1100px; width: 100%; }
+  .photo-frame { position: relative; display: flex; justify-content: center; }
+  .photo-wrapper { position: relative; width: 340px; height: 420px; }
+  .photo-wrapper::before { content: ''; position: absolute; inset: -12px; border: 1px solid var(--gold); opacity: 0.5; transform: rotate(3deg); }
+  .photo-wrapper::after { content: ''; position: absolute; inset: -6px; border: 1px solid var(--gold-light); opacity: 0.3; transform: rotate(-1.5deg); }
+  .photo-wrapper img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; position: relative; z-index: 1; }
+  .hero-text { position: relative; }
+  .hero-eyebrow { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 5px; color: var(--gold); text-transform: uppercase; margin-bottom: 16px; opacity: 0.8; }
+  .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(42px, 6vw, 80px); font-weight: 300; line-height: 0.95; color: var(--cream); margin-bottom: 8px; }
+  .hero-name em { display: block; color: var(--gold-light); font-style: italic; font-weight: 300; }
+  .divider { display: flex; align-items: center; gap: 12px; margin: 24px 0; }
+  .divider-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); max-width: 120px; }
+  .divider-diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); }
+  .hero-subtitle { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 3px; color: var(--gold-light); text-transform: uppercase; margin-bottom: 32px; }
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; }
+  .meta-item { border-left: 2px solid rgba(201,168,76,0.3); padding-left: 12px; }
+  .meta-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); opacity: 0.7; margin-bottom: 4px; }
+  .meta-value { font-size: 13px; color: var(--cream); opacity: 0.9; }
+
+  /* SECTION HEADERS */
+  .section-header { display: flex; align-items: center; gap: 20px; margin-bottom: 60px; flex-wrap: wrap; }
+  .section-number { font-family: 'Cormorant Garamond', serif; font-size: 80px; line-height: 1; color: rgba(201,168,76,0.1); font-weight: 300; letter-spacing: -4px; min-width: 80px; }
+  .section-title { font-family: 'Cinzel', serif; font-size: clamp(14px, 3vw, 22px); letter-spacing: 4px; color: var(--gold-light); text-transform: uppercase; }
+  .section-line { flex: 1; height: 1px; background: linear-gradient(to right, rgba(201,168,76,0.4), transparent); min-width: 20px; }
+
+  /* ABOUT SECTION */
+  .about-section { background: var(--about-bg); padding: 100px 60px; }
+  .about-inner { max-width: 900px; margin: 0 auto; }
+  .about-header { display: flex; align-items: center; gap: 20px; margin-bottom: 50px; flex-wrap: wrap; }
+  .about-number { font-family: 'Cormorant Garamond', serif; font-size: 80px; line-height: 1; color: rgba(139,105,20,0.15); font-weight: 300; letter-spacing: -4px; min-width: 80px; }
+  .about-title { font-family: 'Cinzel', serif; font-size: clamp(14px, 3vw, 22px); letter-spacing: 4px; color: var(--gold-dark); text-transform: uppercase; }
+  .about-line { flex: 1; height: 1px; background: linear-gradient(to right, rgba(139,105,20,0.4), transparent); }
+  .about-body { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; }
+  .about-portrait { position: relative; }
+  .about-portrait img { width: 100%; height: 320px; object-fit: cover; object-position: top; display: block; position: relative; z-index: 1; }
+  .about-portrait::before { content: ''; position: absolute; inset: -8px; border: 1px solid var(--gold); opacity: 0.4; z-index: 0; }
+  .about-portrait::after { content: ''; position: absolute; inset: -16px; border: 1px solid rgba(139,105,20,0.2); z-index: 0; }
+  .about-quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 100px; line-height: 0.5; color: var(--gold); opacity: 0.3; display: block; margin-bottom: 20px; }
+  .about-text { font-family: 'Cormorant Garamond', serif; font-size: 18px; line-height: 1.85; color: #3C2010; font-weight: 400; }
+  .about-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .about-tag { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold-dark); border: 1px solid rgba(139,105,20,0.35); padding: 6px 14px; }
+
+  /* HONOURS */
+  .honours-section { background: var(--bg-mid); padding: 100px 60px; }
+  .honours-inner { max-width: 1100px; margin: 0 auto; }
+  .honours-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+  .honour-card { background: rgba(201,168,76,0.05); border: 1px solid rgba(201,168,76,0.18); padding: 48px 32px 40px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; transition: background 0.3s; }
+  .honour-card:hover { background: rgba(201,168,76,0.09); }
+  .honour-icon { font-size: 36px; line-height: 1; }
+  .honour-title { font-family: "Cinzel", serif; font-size: 13px; letter-spacing: 2px; color: var(--gold-light); text-transform: uppercase; }
+  .honour-source { font-family: "Cormorant Garamond", serif; font-size: 14px; color: var(--muted); letter-spacing: 1px; }
+
+  /* EXAMS */
+  .exams-section { background: #0F0500; padding: 100px 60px; }
+  .exams-inner { max-width: 1100px; margin: 0 auto; }
+  .exams-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .exam-card { background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.02)); border: 1px solid rgba(201,168,76,0.2); padding: 24px 16px; text-align: center; }
+  .exam-year { font-size: 10px; letter-spacing: 2px; color: var(--gold); opacity: 0.6; margin-bottom: 8px; }
+  .exam-name { font-family: 'Cormorant Garamond', serif; font-size: 13px; color: var(--cream); margin-bottom: 12px; font-style: italic; text-transform: capitalize; }
+  .exam-score { font-family: 'Cinzel', serif; font-size: 20px; color: var(--gold-light); }
+  .exam-score small { font-size: 11px; opacity: 0.7; }
+  .exam-bar { margin-top: 12px; height: 2px; background: rgba(255,255,255,0.05); border-radius: 2px; overflow: hidden; }
+  .exam-fill { height: 100%; background: linear-gradient(to right, var(--gold-dark), var(--gold-light)); border-radius: 2px; }
+
+  /* PERFORMANCES */
+  .performances-section { background: var(--deep); padding: 100px 60px; }
+  .performances-inner { max-width: 1100px; margin: 0 auto; }
+  .performances-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .perf-item { padding: 20px 24px; background: rgba(255,255,255,0.02); border-left: 2px solid rgba(201,168,76,0.2); display: flex; align-items: flex-start; gap: 16px; transition: all 0.3s ease; }
+  .perf-item:hover { background: rgba(201,168,76,0.06); border-left-color: var(--gold); }
+  .perf-num { font-family: 'Cormorant Garamond', serif; font-size: 28px; color: rgba(201,168,76,0.3); line-height: 1; min-width: 36px; font-weight: 300; }
+  .perf-name { font-size: 13px; color: var(--cream); opacity: 0.85; line-height: 1.5; }
+  .perf-year { font-size: 10px; color: var(--gold); opacity: 0.6; letter-spacing: 1px; margin-top: 4px; }
+
+  /* EXPERIENCE */
+  .experience-section { background: var(--deep); padding: 100px 60px; }
+  .experience-inner { max-width: 900px; margin: 0 auto; }
+  .experience-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+  .experience-item { display: flex; align-items: flex-start; gap: 20px; padding: 24px; background: rgba(255,255,255,0.02); border-left: 2px solid var(--gold); }
+  .exp-bullet { font-family: 'Cinzel', serif; color: var(--gold); font-weight: bold; font-size: 16px; min-width: 24px; }
+  .exp-content h4 { font-family: 'Cinzel', serif; font-size: 16px; color: var(--gold-light); margin-bottom: 8px; }
+  .exp-content p { font-size: 14px; opacity: 0.8; line-height: 1.7; }
+
+  /* GALLERY */
+  .gallery-section { background: var(--deep); padding: 100px 60px; }
+  .gallery-inner { max-width: 1200px; margin: 0 auto; }
+  .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .gallery-item { position: relative; overflow: hidden; cursor: pointer; aspect-ratio: 3/4; }
+  .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/9; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; display: block; }
+  .gallery-item:hover img { transform: scale(1.05); }
+  .gallery-item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,10,0,0.5), transparent); opacity: 0; transition: opacity 0.4s; }
+  .gallery-item:hover::after { opacity: 1; }
+
+  /* VIDEOS */
+  .video-section { background: linear-gradient(180deg, #0D0500 0%, var(--bg-mid) 100%); padding: 100px 60px; }
+  .video-inner { max-width: 1200px; margin: 0 auto; }
+  .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .video-card { background: rgba(201,168,76,0.04); border: 1px solid rgba(201,168,76,0.12); overflow: hidden; }
+
+  /* Custom video player - no native controls = no download button */
+  .video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; background: #000; overflow: hidden; -webkit-touch-callout: none; user-select: none; -webkit-user-select: none; }
+  .video-wrap video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; display: block; background: #000; pointer-events: none; -webkit-touch-callout: none; }
+  .video-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; z-index: 2; }
+  .video-click-area { position: absolute; inset: 0; cursor: pointer; }
+
+  /* Big play button in center */
+  .video-big-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 56px; height: 56px; background: rgba(201,168,76,0.85); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: opacity 0.3s, transform 0.2s; pointer-events: none; }
+  .video-big-play svg { margin-left: 4px; }
+  .video-wrap.playing .video-big-play { opacity: 0; }
+
+  /* Bottom controls bar */
+  .video-controls { background: linear-gradient(transparent, rgba(0,0,0,0.85)); padding: 24px 12px 10px; display: flex; flex-direction: column; gap: 6px; }
+  .video-progress { width: 100%; height: 3px; background: rgba(255,255,255,0.2); border-radius: 3px; cursor: pointer; position: relative; }
+  .video-progress-fill { height: 100%; background: var(--gold); border-radius: 3px; width: 0%; transition: width 0.1s linear; pointer-events: none; }
+  .video-bottom { display: flex; align-items: center; gap: 10px; }
+  .video-play-btn { background: none; border: none; cursor: pointer; color: var(--gold); padding: 2px; display: flex; align-items: center; }
+  .video-time { font-family: 'Raleway', sans-serif; font-size: 10px; color: rgba(255,255,255,0.7); flex: 1; }
+  .video-title { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); padding: 10px 14px; border-top: 1px solid rgba(201,168,76,0.1); }
+
+  /* LIGHTBOX - mobile friendly */
+  #lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.96); z-index: 1000; align-items: center; justify-content: center; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 94vw; max-height: 88vh; object-fit: contain; border: 1px solid rgba(201,168,76,0.15); }
+  #lightbox-close { position: absolute; top: 16px; right: 20px; color: var(--gold); font-size: 36px; cursor: pointer; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.5); border-radius: 50%; border: none; line-height: 1; }
+
+  /* CONTACT SECTION */
+  .contact-section { background: var(--bg-mid); padding: 100px 60px; }
+  .contact-inner { max-width: 700px; margin: 0 auto; text-align: center; }
+  .contact-intro { font-family: 'Cormorant Garamond', serif; font-size: 18px; line-height: 1.8; color: rgba(253,246,227,0.75); margin-bottom: 48px; }
+  .contact-cards { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+  .contact-card { display: flex; align-items: center; gap: 14px; background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.22); padding: 20px 28px; text-decoration: none; transition: background 0.3s, border-color 0.3s; min-width: 260px; }
+  .contact-card:hover, .contact-card:focus-visible { background: rgba(201,168,76,0.13); border-color: var(--gold); }
+  .contact-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .contact-card-icon { font-size: 22px; line-height: 1; }
+  .contact-card-body { text-align: left; }
+  .contact-card-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); opacity: 0.75; margin-bottom: 4px; }
+  .contact-card-value { font-family: 'Cormorant Garamond', serif; font-size: 15px; color: var(--cream); letter-spacing: 0.5px; word-break: break-all; }
+
+  /* FOOTER */
+  footer { background: #0A0400; text-align: center; padding: 60px 24px; font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 3px; color: var(--muted); border-top: 1px solid rgba(201,168,76,0.1); }
+  footer .lotus { font-size: 24px; display: block; margin-bottom: 16px; }
+
+  /* ===================== MOBILE RESPONSIVE ===================== */
+  @media (max-width: 900px) {
+    .top-nav-inner { padding: 0 20px; }
+    .nav-toggle { display: flex; }
+    .top-nav-links { display: none; flex-direction: column; gap: 0; position: absolute; top: 60px; left: 0; right: 0; background: rgba(10,3,0,0.97); border-bottom: 1px solid rgba(201,168,76,0.2); padding: 12px 0 16px; }
+    .top-nav-links.open { display: flex; }
+    .top-nav-links a { padding: 13px 28px; font-size: 10px; border-radius: 0; }
+    .top-nav-links a.nav-contact { margin: 8px 28px 0; border-radius: 2px; text-align: center; border: 1px solid rgba(201,168,76,0.4); }
+
+    .hero { padding: 100px 24px 60px; }
+    .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+    .photo-frame { justify-content: center; }
+    .photo-wrapper { width: 240px; height: 300px; margin: 0 auto; }
+    .divider { justify-content: center; }
+    .meta-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .border-frame { inset: 10px; }
+
+    .about-section { padding: 60px 24px; }
+    .about-body { grid-template-columns: 1fr; gap: 32px; }
+    .about-portrait img { height: 260px; }
+    .about-text { font-size: 16px; }
+
+    .honours-section { padding: 60px 24px; }
+    .honours-grid { grid-template-columns: 1fr; gap: 12px; }
+    .honour-card { padding: 32px 24px; }
+
+    .exams-section { padding: 60px 24px; }
+    .exams-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+
+    .performances-section { padding: 60px 24px; }
+    .performances-grid { grid-template-columns: 1fr; }
+
+    .experience-section { padding: 60px 24px; }
+
+    .gallery-section { padding: 60px 24px; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 4px; }
+    .gallery-item.wide { grid-column: span 1; aspect-ratio: 3/4; }
+
+    .video-section { padding: 60px 24px; }
+    .video-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    .contact-section { padding: 60px 24px; }
+    .contact-cards { flex-direction: column; align-items: center; }
+    .contact-card { min-width: unset; width: 100%; max-width: 360px; }
+
+    .section-header { margin-bottom: 36px; }
+    .section-number { font-size: 52px; min-width: 56px; }
+    .about-number { font-size: 52px; min-width: 56px; }
+    .nav-dots { right: 10px; }
+  }
+
+  @media (max-width: 480px) {
+    .hero-name { font-size: 38px; }
+    .hero-subtitle { font-size: 10px; letter-spacing: 2px; }
+    .meta-grid { grid-template-columns: 1fr; }
+    .exams-grid { grid-template-columns: 1fr; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item.wide { grid-column: span 1; }
+    .about-section { padding: 48px 16px; }
+    .honours-section, .exams-section, .performances-section, .experience-section, .gallery-section, .video-section, .contact-section { padding: 48px 16px; }
+    footer { padding: 40px 16px; }
+    .video-big-play { width: 48px; height: 48px; }
+    /* Bigger tap targets for mobile video controls */
+    .video-progress { height: 6px; }
+    .video-play-btn { padding: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SKIP TO MAIN CONTENT -->
+<a href="#hero" class="skip-link">Skip to main content</a>
+
+<!-- TOP NAVIGATION BAR -->
+<header role="banner">
+  <nav class="top-nav" aria-label="Main navigation">
+    <div class="top-nav-inner">
+      <a href="#hero" class="top-nav-logo" aria-label="Aishwarya Muralidhara — home">AM</a>
+      <button class="nav-toggle" aria-controls="top-nav-links" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="top-nav-links" id="top-nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#honours">Honours</a></li>
+        <li><a href="#examinations">Exams</a></li>
+        <li><a href="#performances">Performances</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact" class="nav-contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- NAV DOTS -->
+<nav class="nav-dots" aria-label="Page sections">
+  <button class="nav-dot active" aria-label="Hero" onclick="document.querySelector('.hero').scrollIntoView({behavior:'smooth'})"></button>
+  <button class="nav-dot" aria-label="About" onclick="document.querySelector('.about-section').scrollIntoView({behavior:'smooth'})"></button>
+  <button class="nav-dot" aria-label="Honours" onclick="document.querySelector('.honours-section').scrollIntoView({behavior:'smooth'})"></button>
+  <button class="nav-dot" aria-label="Gallery" onclick="document.querySelector('.gallery-section').scrollIntoView({behavior:'smooth'})"></button>
+  <button class="nav-dot" aria-label="Videos" onclick="document.querySelector('.video-section').scrollIntoView({behavior:'smooth'})"></button>
+  <button class="nav-dot" aria-label="Contact" onclick="document.querySelector('.contact-section').scrollIntoView({behavior:'smooth'})"></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="border-frame"></div>
+  <div class="hero-inner">
+    <div class="photo-frame">
+      <div class="photo-wrapper">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467736/dance1_ztrats.jpg" alt="Aishwarya Muralidhara">
+      </div>
+    </div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Bharatanatyam Artist</p>
+      <h1 class="hero-name">Aishwarya<em>Muralidhara</em></h1>
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+      <p class="hero-subtitle">Nritta &middot; Abhinaya &middot; Nritya</p>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="meta-label">Training</div>
+          <div class="meta-value">10+ Years</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Tradition</div>
+          <div class="meta-value">Bharatanatyam</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Guru</div>
+          <div class="meta-value">Vid. Smt. Vani Venkata Ramu</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Guru</div>
+          <div class="meta-value">Vid. Smt. Ranjini Umesh</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-header">
+      <div class="about-number">01</div>
+      <h2 class="about-title">About the Artist</h2>
+      <div class="about-line"></div>
+    </div>
+    <div class="about-body">
+      <div class="about-portrait">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467742/dance2_jfx8qb.jpg" alt="About Image">
+      </div>
+      <div class="about-text-col">
+        <span class="about-quote-mark">"</span>
+        <p class="about-text">
+          Aishwarya Muralidhara is a Bharatanatyam artist of rare depth and grace — a dancer whose body becomes the living language of an ancient tradition. With over a decade of devoted practice, she trained under <strong>Vid. Smt. Vani Venkata Ramu</strong> at <em>Nirmala Natya Kalanikethana</em> and under <strong>Vid. Smt. Ranjini Umesh</strong> at <em>Raagini Sangeetha Nruthyalaya</em> — two luminous lineages flowing through her every movement.<br><br>
+          A Computer Science Engineer by training, she brings to her art the same precision she applies to logic. A practitioner of the Veena, she deepens her musicality from within. As an accomplished competitive swimmer, she brings the athlete's discipline — a body that sustains and a mind that remains fully present. In her, dancer, engineer, musician, and athlete speak the same language: Bharatanatyam in its fullest splendour.
+        </p>
+        <div class="about-tags">
+          <span class="about-tag">Bharatanatyam</span>
+          <span class="about-tag">Veena</span>
+          <span class="about-tag">Computer Science Engineer</span>
+          <span class="about-tag">Competitive Swimmer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HONOURS & TITLES -->
+<section class="honours-section" id="honours">
+  <div class="honours-inner">
+    <div class="section-header">
+      <div class="section-number">02</div>
+      <h2 class="section-title">Honours &amp; Titles</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="honours-grid">
+      <div class="honour-card">
+        <div class="honour-icon">🏆</div>
+        <div class="honour-title">Natya Kalai Mani</div>
+        <div class="honour-source">Sri Harsha Natya Kendra · 2020</div>
+      </div>
+      <div class="honour-card">
+        <div class="honour-icon">🌸</div>
+        <div class="honour-title">Natya Saraswathi</div>
+        <div class="honour-source">Kinkini Utsava · 2017</div>
+      </div>
+      <div class="honour-card">
+        <div class="honour-icon">✨</div>
+        <div class="honour-title">Bharatha Kavin Mani</div>
+        <div class="honour-source">Talent Hunt · 2020</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXAMINATIONS -->
+<section class="exams-section" id="examinations">
+  <div class="exams-inner">
+    <div class="section-header">
+      <div class="section-number">03</div>
+      <h2 class="section-title">Examinations</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="exams-grid">
+      <div class="exam-card">
+        <div class="exam-year">2015</div>
+        <div class="exam-name">Prarambhika</div>
+        <div class="exam-score">Distinction</div>
+        <div class="exam-bar"><div class="exam-fill" style="width:95%"></div></div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-year">2016</div>
+        <div class="exam-name">Praveshika Prathama</div>
+        <div class="exam-score">58<small>/75</small></div>
+        <div class="exam-bar"><div class="exam-fill" style="width:77%"></div></div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-year">2019</div>
+        <div class="exam-name">Praveshika Poorna</div>
+        <div class="exam-score">105<small>/125</small></div>
+        <div class="exam-bar"><div class="exam-fill" style="width:84%"></div></div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-year">2021</div>
+        <div class="exam-name">Madhyama Prathama</div>
+        <div class="exam-score">147<small>/200</small></div>
+        <div class="exam-bar"><div class="exam-fill" style="width:74%"></div></div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-year">2023</div>
+        <div class="exam-name">Madhyama Poorna</div>
+        <div class="exam-score">212<small>/225</small></div>
+        <div class="exam-bar"><div class="exam-fill" style="width:94%"></div></div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-year">2025</div>
+        <div class="exam-name">Visharada Prathama</div>
+        <div class="exam-score">291<small>/300</small></div>
+        <div class="exam-bar"><div class="exam-fill" style="width:97%"></div></div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-year">2023</div>
+        <div class="exam-name">Junior</div>
+        <div class="exam-score">Distinction</div>
+        <div class="exam-bar"><div class="exam-fill" style="width:95%"></div></div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-year">2025</div>
+        <div class="exam-name">Senior</div>
+        <div class="exam-score">Distinction</div>
+        <div class="exam-bar"><div class="exam-fill" style="width:95%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERFORMANCES -->
+<section class="performances-section" id="performances">
+  <div class="performances-inner">
+    <div class="section-header">
+      <div class="section-number">04</div>
+      <h2 class="section-title">Performances</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="performances-grid">
+      <div class="perf-item"><div class="perf-num">01</div><div><div class="perf-name">Thailand International Cultural Festival</div><div class="perf-year">2023 · Bangkok</div></div></div>
+      <div class="perf-item"><div class="perf-num">02</div><div><div class="perf-name">Spandana</div><div class="perf-year">2019</div></div></div>
+      <div class="perf-item"><div class="perf-num">03</div><div><div class="perf-name">Shridhara Gudda, Bangalore</div><div class="perf-year">Shivaratri</div></div></div>
+      <div class="perf-item"><div class="perf-num">04</div><div><div class="perf-name">Devarayanadurga</div><div class="perf-year">Tumkur</div></div></div>
+      <div class="perf-item"><div class="perf-num">05</div><div><div class="perf-name">Banavasi, Sirsi</div><div class="perf-year">Kannada Rajyotsava</div></div></div>
+      <div class="perf-item"><div class="perf-num">06</div><div><div class="perf-name">Shilparamam, Hyderabad</div><div class="perf-year">Dussehra Cultural Festival · 2022</div></div></div>
+      <div class="perf-item"><div class="perf-num">07</div><div><div class="perf-name">Golden Temple Vellore</div><div class="perf-year">Tamil Nadu · 2023</div></div></div>
+      <div class="perf-item"><div class="perf-num">08</div><div><div class="perf-name">Nanjangudu, Mysore</div><div class="perf-year">Dussehra</div></div></div>
+      <div class="perf-item"><div class="perf-num">09</div><div><div class="perf-name">Sri Balakrishnananda Mahasamsthana, Talakadu</div><div class="perf-year">Navaratri Utsava · 2021, 2022, 2023</div></div></div>
+      <div class="perf-item"><div class="perf-num">10</div><div><div class="perf-name">Shankhara Mutt, Tumkur</div><div class="perf-year">Samskruthika Utsava</div></div></div>
+      <div class="perf-item"><div class="perf-num">11</div><div><div class="perf-name">Vinayaka Nagar Ganapathi Pendal</div><div class="perf-year">Ganesh Chaturthi · 2015–2023</div></div></div>
+      <div class="perf-item"><div class="perf-num">12</div><div><div class="perf-name">Ganapati Jaathra Mahotsava, Tiptur</div><div class="perf-year">2022, 2023</div></div></div>
+      <div class="perf-item"><div class="perf-num">13</div><div><div class="perf-name">Siddaganga Mutt, Tumkur</div><div class="perf-year">2023, 2024</div></div></div>
+      <div class="perf-item"><div class="perf-num">14</div><div><div class="perf-name">Ayurvedic Centre, Sira</div><div class="perf-year">2015–2018</div></div></div>
+      <div class="perf-item"><div class="perf-num">15</div><div><div class="perf-name">Kalingaiyana Palya, Honnudike</div><div class="perf-year">Navaratri Mahotsava</div></div></div>
+      <div class="perf-item"><div class="perf-num">16</div><div><div class="perf-name">Lakshmi Temple, BH Road, Tumkur</div><div class="perf-year">Samskruthika Mahotsava</div></div></div>
+      <div class="perf-item"><div class="perf-num">17</div><div><div class="perf-name">Kamakshi Temple, Hebbur</div><div class="perf-year">Navaratri</div></div></div>
+      <div class="perf-item"><div class="perf-num">18</div><div><div class="perf-name">Hanuma Jayanti, Sri Kshetra, Belguru</div><div class="perf-year"></div></div></div>
+      <div class="perf-item"><div class="perf-num">19</div><div><div class="perf-name">Narsapura, Urkere</div><div class="perf-year">Kempegowdara Jayanti</div></div></div>
+      <div class="perf-item"><div class="perf-num">20</div><div><div class="perf-name">Yediyuru Sri Siddalingeshwara</div><div class="perf-year">Jaathra Mahotsava</div></div></div>
+      <div class="perf-item"><div class="perf-num">21</div><div><div class="perf-name">Kinkini Utsava</div><div class="perf-year">2017</div></div></div>
+      <div class="perf-item"><div class="perf-num">22</div><div><div class="perf-name">Pattanayakana Halli</div><div class="perf-year">Samskrutika Utsava</div></div></div>
+      <div class="perf-item"><div class="perf-num">23</div><div><div class="perf-name">Chickamagaluru</div><div class="perf-year">Ganesh Chaturthi</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL EXPERIENCE -->
+<section class="experience-section" id="experience">
+  <div class="experience-inner">
+    <div class="section-header">
+      <div class="section-number">05</div>
+      <h2 class="section-title">Professional Dance Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="experience-grid">
+      <div class="experience-item">
+        <div class="exp-bullet">I</div>
+        <div class="exp-content">
+          <h4>Professional Choreography Experience</h4>
+          <p>Associated with Gaana Academy as a choreographer, curating dance routines for summer camps and various cultural events, blending creativity with classical and contemporary elements.</p>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="exp-bullet">II</div>
+        <div class="exp-content">
+          <h4>Dance–Yoga Integration Sessions </h4>
+          <p>Performed extensively across prestigious sabhas and national dance festivals, showcasing the Pandanallur style of Bharatanatyam.Led engaging online sessions exploring the deep connection between dance and yoga, highlighting the balance of body, mind, and rhythm. for this sentance give me a good heading </p>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="exp-bullet">III</div>
+        <div class="exp-content">
+          <h4>Bharatanatyam Mentor & Performer</h4>
+          <p>Guiding students in Bharatanatyam across both offline and online platforms, nurturing grace, discipline, and cultural heritage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="gallery-inner">
+    <div class="section-header">
+      <div class="section-number">06</div>
+      <h2 class="section-title">Gallery</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775466959/4_nd6rua.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467748/WhatsApp_Image_2026-03-31_at_9.13.42_AM_1_fzyuk0.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467746/n_ifwtel.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467744/IMG-20250414-WA0055_jjigxq.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467726/10_q8s3vi.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467723/9_oohgi9.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467706/6_mxruue.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775467693/5_rvlibt.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775466950/3_qtpuso.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775466922/2_aauqse.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775466900/1_llju0l.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775472848/WhatsApp_Image_2026-03-31_at_9.13.42_AM_19_bkzqow.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775472847/WhatsApp_Image_2026-03-31_at_9.13.42_AM_18_ffauhz.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775472846/WhatsApp_Image_2026-03-31_at_9.13.42_AM_6_eeuluy.jpg" alt="Performance Photo">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src)">
+        <img src="https://res.cloudinary.com/dcipuiih1/image/upload/v1775472844/WhatsApp_Image_2026-03-31_at_8.58.13_AM_bekt6a.jpg" alt="Performance Photo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="video-section" id="videos">
+  <div class="video-inner">
+    <div class="section-header">
+      <div class="section-number">07</div>
+      <h2 class="section-title">Performance Videos</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="video-grid" id="videoGrid">
+
+      <div class="video-card">
+        <div class="video-wrap" id="vw1">
+          <video id="v1" src="https://res.cloudinary.com/dcipuiih1/video/upload/v1775468558/EFC210B4-C455-4161-B864-086435A47FF0_uv4lhr.mp4" playsinline webkit-playsinline preload="metadata"></video>
+          <div class="video-overlay">
+            <div class="video-click-area" onclick="togglePlay('v1','vw1')"></div>
+            <div class="video-big-play" id="bp1"><svg width="22" height="22" viewBox="0 0 24 24" fill="#1C0E05"><path d="M8 5v14l11-7z"/></svg></div>
+            <div class="video-controls">
+              <div class="video-progress" onclick="seekVideo(event,'v1','pf1')"><div class="video-progress-fill" id="pf1"></div></div>
+              <div class="video-bottom">
+                <button class="video-play-btn" onclick="togglePlay('v1','vw1')">
+                  <svg id="pi1" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <span class="video-time" id="vt1">0:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-title">Bharatanatyam Performance</div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap" id="vw2">
+          <video id="v2" src="https://res.cloudinary.com/dcipuiih1/video/upload/v1775475329/742C6C62-DFFB-4FE7-8447-6A6CBF376F9F_o4gwk1.mp4" playsinline webkit-playsinline preload="metadata"></video>
+          <div class="video-overlay">
+            <div class="video-click-area" onclick="togglePlay('v2','vw2')"></div>
+            <div class="video-big-play" id="bp2"><svg width="22" height="22" viewBox="0 0 24 24" fill="#1C0E05"><path d="M8 5v14l11-7z"/></svg></div>
+            <div class="video-controls">
+              <div class="video-progress" onclick="seekVideo(event,'v2','pf2')"><div class="video-progress-fill" id="pf2"></div></div>
+              <div class="video-bottom">
+                <button class="video-play-btn" onclick="togglePlay('v2','vw2')">
+                  <svg id="pi2" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <span class="video-time" id="vt2">0:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-title">Bharatanatyam Performance</div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap" id="vw3">
+          <video id="v3" src="https://res.cloudinary.com/dcipuiih1/video/upload/q_auto/f_auto/v1775473205/Video_2_og7p0c.mp4" playsinline webkit-playsinline preload="metadata"></video>
+          <div class="video-overlay">
+            <div class="video-click-area" onclick="togglePlay('v3','vw3')"></div>
+            <div class="video-big-play" id="bp3"><svg width="22" height="22" viewBox="0 0 24 24" fill="#1C0E05"><path d="M8 5v14l11-7z"/></svg></div>
+            <div class="video-controls">
+              <div class="video-progress" onclick="seekVideo(event,'v3','pf3')"><div class="video-progress-fill" id="pf3"></div></div>
+              <div class="video-bottom">
+                <button class="video-play-btn" onclick="togglePlay('v3','vw3')">
+                  <svg id="pi3" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                </button>
+                <span class="video-time" id="vt3">0:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-title">Bharatanatyam Performance</div>
+      </div>
+
+      <!-- YouTube Videos -->
+      <div class="video-card">
+        <div class="video-wrap" style="padding-bottom:56.25%; position:relative; background:#000;">
+          <iframe src="https://www.youtube.com/embed/nCM_81z_F2Y" title="Bharatanatyam Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+        <div class="video-title">Bharatanatyam Performance</div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap" style="padding-bottom:56.25%; position:relative; background:#000;">
+          <iframe src="https://www.youtube.com/embed/leJjeqtJ2Vk" title="Bharatanatyam Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+        <div class="video-title">Bharatanatyam Performance</div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap" style="padding-bottom:56.25%; position:relative; background:#000;">
+          <iframe src="https://www.youtube.com/embed/GOhKq90-oPs" title="Bharatanatyam Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+        <div class="video-title">Bharatanatyam Performance</div>
+      </div>
+
+      <div class="video-card">
+        <div class="video-wrap" style="padding-bottom:56.25%; position:relative; background:#000;">
+          <iframe src="https://www.youtube.com/embed/rL2demeum0s" title="Bharatanatyam Performance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+        </div>
+        <div class="video-title">Bharatanatyam Performance</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="section-header" style="justify-content:center; margin-bottom:40px;">
+      <div class="section-number" style="color:rgba(201,168,76,0.1);">08</div>
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="contact-intro">For performance bookings, collaborations, teaching enquiries, or to simply connect — reach out via email.</p>
+    <div class="contact-cards">
+      <a href="mailto:aishwaryavasishta05@gmail.com" class="contact-card" aria-label="Send email to aishwaryavasishta05@gmail.com">
+        <span class="contact-card-icon" aria-hidden="true">✉️</span>
+        <div class="contact-card-body">
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-value">aishwaryavasishta05@gmail.com</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="lotus">🪷</span>
+  <p>Aishwarya Muralidhara &middot; Bharatanatyam Artist</p>
+  <p style="margin-top:8px; opacity:0.4;">Nirmala Natya Kalanikethana &middot; Raagini Sangeetha Nruthyalaya</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button id="lightbox-close" onclick="closeLightbox()" aria-label="Close image">&times;</button>
+  <img id="lightbox-img" src="" alt="Enlarged performance photo">
+</div>
+
+<script>
+  // ===== HAMBURGER MENU =====
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinksList = document.getElementById('top-nav-links');
+  navToggle.addEventListener('click', function() {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    navLinksList.classList.toggle('open');
+  });
+  navLinksList.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      navToggle.setAttribute('aria-expanded', 'false');
+      navLinksList.classList.remove('open');
+    });
+  });
+
+  // ===== LIGHTBOX - tap outside image to close on mobile =====
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+
+  // Disable right-click / long-press save on images and videos
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') e.preventDefault();
+  });
+  document.addEventListener('dragstart', function(e) {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+
+  // Custom video player controls
+  const PLAY_ICON = '<path d="M8 5v14l11-7z"/>';
+  const PAUSE_ICON = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+
+  function togglePlay(vid, wrap) {
+    const v = document.getElementById(vid);
+    const w = document.getElementById(wrap);
+    if (v.paused) {
+      document.querySelectorAll('.video-wrap video').forEach(function(ov) {
+        if (ov !== v) { ov.pause(); ov.closest('.video-wrap').classList.remove('playing'); }
+      });
+      v.play().catch(function(){});
+      w.classList.add('playing');
+    } else {
+      v.pause();
+      w.classList.remove('playing');
+    }
+  }
+
+  function seekVideo(e, vid, fillId) {
+    const v = document.getElementById(vid);
+    const bar = e.currentTarget;
+    const rect = bar.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const ratio = (clientX - rect.left) / rect.width;
+    if (v.duration) v.currentTime = Math.max(0, Math.min(1, ratio)) * v.duration;
+  }
+
+  function fmtTime(s) {
+    if (isNaN(s)) return '0:00';
+    const m = Math.floor(s / 60);
+    const sec = Math.floor(s % 60);
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  [['v1','pf1','pi1','vt1','vw1'],
+   ['v2','pf2','pi2','vt2','vw2'],
+   ['v3','pf3','pi3','vt3','vw3']].forEach(function(set) {
+    const v = document.getElementById(set[0]);
+    if (!v) return;
+    // Add touch support for progress bar
+    document.getElementById('pf1') && (function(){
+      const bar = v.parentElement.querySelector('.video-progress');
+      if (bar) {
+        bar.addEventListener('touchstart', function(e) { seekVideo(e, set[0], set[1]); e.preventDefault(); }, {passive: false});
+        bar.addEventListener('touchmove', function(e) { seekVideo(e, set[0], set[1]); e.preventDefault(); }, {passive: false});
+      }
+    })();
+    v.addEventListener('timeupdate', function() {
+      const pct = v.duration ? (v.currentTime / v.duration * 100) : 0;
+      document.getElementById(set[1]).style.width = pct + '%';
+      document.getElementById(set[3]).textContent = fmtTime(v.currentTime) + ' / ' + fmtTime(v.duration);
+    });
+    v.addEventListener('play', function() {
+      document.getElementById(set[2]).innerHTML = PAUSE_ICON;
+    });
+    v.addEventListener('pause', function() {
+      document.getElementById(set[2]).innerHTML = PLAY_ICON;
+      document.getElementById(set[4]).classList.remove('playing');
+    });
+    v.addEventListener('ended', function() {
+      document.getElementById(set[2]).innerHTML = PLAY_ICON;
+      document.getElementById(set[4]).classList.remove('playing');
+      document.getElementById(set[1]).style.width = '0%';
+    });
+  });
+
+  function openLightbox(src) {
+    document.getElementById('lightbox-img').src = src;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.getElementById('lightbox-img').src = '';
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', function(e) { if(e.key==='Escape') closeLightbox(); });
+
+  // Nav dot scroll tracking
+  const dots = document.querySelectorAll('.nav-dot');
+  const sections = [
+    document.querySelector('.hero'),
+    document.querySelector('.about-section'),
+    document.querySelector('.honours-section'),
+    document.querySelector('.gallery-section'),
+    document.querySelector('.video-section'),
+    document.querySelector('.contact-section')
+  ];
+  window.addEventListener('scroll', function() {
+    let current = 0;
+    sections.forEach(function(el, i) {
+      if (el && el.getBoundingClientRect().top <= window.innerHeight / 2) current = i;
+    });
+    dots.forEach(function(d) { d.classList.remove('active'); });
+    if (dots[current]) dots[current].classList.add('active');
+  });
+</script>
+</body>
+</html>
